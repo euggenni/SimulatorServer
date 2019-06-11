@@ -1,0 +1,70 @@
+{
+    "Tasks": [
+        {
+            "taskName": "Пробная задача 1",
+            "lAType": 4,
+            "lASpeed": 100.0,
+            "targetingType": 1,
+            "weatherType": 0,
+            "interferenceType": 0,
+            "interferencePeriod": 0,
+            "terrainType": 2,
+            "trajectory": {
+                "startLADistance": 2000,
+                "flightHeight": 2000,
+                "azimuth": 0
+            },
+            "rockets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "trajectoryType": 0
+        },
+        {
+            "taskName": "Пробная задача 2",
+            "lAType": 4,
+            "lASpeed": 100.0,
+            "targetingType": 1,
+            "weatherType": 0,
+            "interferenceType": 0,
+            "interferencePeriod": 0,
+            "terrainType": 2,
+            "trajectory": {
+                "startLADistance": 2000,
+                "flightHeight": 2000,
+                "azimuth": 0
+            },
+            "rockets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "trajectoryType": 0
+        },
+        {
+            "taskName": "Пробная задача 3",
+            "lAType": 4,
+            "lASpeed": 100.0,
+            "targetingType": 1,
+            "weatherType": 0,
+            "interferenceType": 0,
+            "interferencePeriod": 0,
+            "terrainType": 2,
+            "trajectory": {
+                "startLADistance": 2000,
+                "flightHeight": 2000,
+                "azimuth": 0
+            },
+            "rockets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "trajectoryType": 0
+        }
+    ]
+}
