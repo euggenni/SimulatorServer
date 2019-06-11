@@ -6,14 +6,13 @@ using UnityEngine.UI;
 public class PlatoonsHandler : MonoBehaviour
 {
     public Dropdown SelectPlatoon;
-    public GameObject toggle;
     public static Platoon SelectedPlatoon;
-
-
+    public static List<Student> Students = new List<Student>();
 
     public void OnChangePlatoonDropdown()
     {
         SelectedPlatoon = PlatoonsManager.GetPlatoon(SelectPlatoon.captionText.text);
+        Students = SelectedPlatoon.Students;
     }
 
     // Start is called before the first frame update
@@ -34,15 +33,5 @@ public class PlatoonsHandler : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public void View()
-    {
-        toggle.SetActive(true);
-    }
-
-    public void Click()
-    {
-        Invoke("View", 9.5f);
     }
 }
