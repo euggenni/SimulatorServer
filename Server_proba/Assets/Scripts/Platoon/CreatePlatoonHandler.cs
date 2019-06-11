@@ -30,20 +30,13 @@ public class CreatePlatoonHandler : MonoBehaviour
             Transform InputCell = Content2.GetChild(0);
             InputField Cell = InputCell.GetComponent<InputField>();
             BufferStudents.Add(new Student(Cell.text));
-            //if (Cell != null)
-            //{
-            //    Debug.Log(Cell.text);
-            //}
-            //else Debug.Log("Cell пусто");
         }
     }
 
     private void WriteData()
     {
         Transform ObjectHierarhy = Table.transform;
-        //Debug.Log(ObjectHierarhy.childCount);
         Transform Column = ObjectHierarhy.GetChild(0);
-        //Debug.Log("Число потомков" + Column.childCount);
         Students = new List<Student>(BufferStudents);
         for (int i = 1; i < BufferStudents.Count+1; i++)
         {
@@ -53,11 +46,6 @@ public class CreatePlatoonHandler : MonoBehaviour
             Transform InputCell = Content2.GetChild(0);
             InputField Cell = InputCell.GetComponent<InputField>();
             Cell.text = BufferStudents.ToArray()[i - 1].NameStudent;
-            //if (Cell != null)
-            //{
-            //    Debug.Log(Cell.text);
-            //}
-            //else Debug.Log("Cell пусто");
         }
     }
 

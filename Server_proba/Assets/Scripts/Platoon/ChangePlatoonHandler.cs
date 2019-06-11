@@ -26,6 +26,8 @@ public class ChangePlatoonHandler : MonoBehaviour
         SelectedPlatoon = PlatoonsManager.GetPlatoon(SelectPlatoon.captionText.text);
         NamePlatoon.text = SelectedPlatoon.NamePlatoon;
         Students = new List<Student>(SelectedPlatoon.Students);
+        Debug.Log(Students.Count);
+        Debug.Log(Students.ToArray()[0].NameStudent);
         Table.UpdateContent();
     }
 
