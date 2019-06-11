@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PlatoonsManager
 {
-    private static List<Platoon> platoons;
+    private static List<Platoon> platoons = new List<Platoon>();
     private static string PLATOONS_FILE_PATH = "platoons.std";
 
     public static List<Platoon> Platoons

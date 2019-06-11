@@ -5,28 +5,43 @@ using UnityEngine.UI;
 
 public class PlatoonsHandler : MonoBehaviour
 {
-    public Dropdown SelectPlatoon;
-    public static Platoon SelectedPlatoon;
-    public static List<Student> Students = new List<Student>();
+    public Dropdown SelectPlatoon; //поле выбора взвода
+    public UnityUITable.Table Table; //таблица с данными
+    public static Platoon SelectedPlatoon = new Platoon(); //выбранный взвод
+    public static List<Student> Students = new List<Student>(); //список выбранных студентов
 
-    public void OnChangePlatoonDropdown()
+    public void OnChangePlatoonDropdown() //обработчик события изменения выбранного взвода
     {
         SelectedPlatoon = PlatoonsManager.GetPlatoon(SelectPlatoon.captionText.text);
-        Students = SelectedPlatoon.Students;
+        byte number = 1;
+        Students.Clear();
+        //Debug.Log(SelectedPlatoon.ToString());
+        foreach(Student student in SelectedPlatoon.Students)
+        {
+            Students.Add(new Student(student.NameStudent, number));
+            number++;
+        }
+        Table.UpdateContent();
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public static void Starter(Dropdown SelectPlatoon, UnityUITable.Table Table)//реализует процесс инициализации
     {
         PlatoonsManager.LoadPlatoons();
-        PlatoonsManager.Platoons.Sort();
+        //PlatoonsManager.Platoons.Sort();
         SelectPlatoon.options.Clear();
-        foreach(Platoon platoon in PlatoonsManager.Platoons)
+        foreach (Platoon platoon in PlatoonsManager.Platoons)
         {
             SelectPlatoon.options.Add(new Dropdown.OptionData(platoon.NamePlatoon));
         }
-        SelectPlatoon.options.Add(new Dropdown.OptionData("123"));
-        SelectPlatoon.value = 0;
+        //SelectPlatoon.value = 0;
+    }
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        Starter(SelectPlatoon, Table);
+        //OnChangePlatoonDropdown();
+        Invoke("OnChangePlatoonDropdown", 1);
     }
 
     // Update is called once per frame

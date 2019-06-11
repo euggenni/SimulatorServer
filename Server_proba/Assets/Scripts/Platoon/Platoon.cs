@@ -64,6 +64,12 @@ public class Platoon
         this.NamePlatoon = NamePlatoon;
     }
 
+    public Platoon(string NamePlatoon, List<Student> Students) : base()
+    {
+        this.Students = Students;
+        this.NamePlatoon = NamePlatoon;
+    }
+
     public Platoon(List<Student> Students, string NamePlatoon, byte IDPlatoon)
     {
         this.Students = Students;

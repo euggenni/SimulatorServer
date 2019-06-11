@@ -107,6 +107,8 @@
     <Compile Include="Assets\Scripts\JsonHelper.cs" />
     <Compile Include="Assets\Scripts\Network\Server.cs" />
     <Compile Include="Assets\Scripts\PatchHandler.cs" />
+    <Compile Include="Assets\Scripts\Platoon\ChangePlatoonHandler.cs" />
+    <Compile Include="Assets\Scripts\Platoon\CreatePlatoonHandler.cs" />
     <Compile Include="Assets\Scripts\Platoon\Platoon.cs" />
     <Compile Include="Assets\Scripts\Platoon\PlatoonsHandler.cs" />
     <Compile Include="Assets\Scripts\Platoon\PlatoonsManager.cs" />

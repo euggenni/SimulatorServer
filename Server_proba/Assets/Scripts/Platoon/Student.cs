@@ -39,12 +39,18 @@ public class Student
 
     public Student()
     {
-        this.NameStudent = "Неизвестный";
+        this.NameStudent = "";
         this.IdStudent = 0;
     }
 
     public Student(string NameStudent) :base()
     {
         this.NameStudent = NameStudent;
+    }
+
+    public Student(string NameStudent, byte IdStudent)
+    {
+        this.NameStudent = NameStudent;
+        this.IdStudent = IdStudent;
     }
 }

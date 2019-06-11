@@ -1,0 +1,36 @@
+{
+    "Tasks": [
+        {
+            "students": [
+                {
+                    "nameStudent": "23434",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "dfdgfgfgfg",
+                    "idStudent": 0
+                }
+            ],
+            "namePlatoon": "123",
+            "idPlatoon": 0
+        },
+        {
+            "students": [
+                {
+                    "nameStudent": "0",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "00",
+                    "idStudent": 0
+                },
+				{
+                    "nameStudent": "000",
+                    "idStudent": 0
+                }
+            ],
+            "namePlatoon": "122",
+            "idPlatoon": 0
+        }
+    ]
+}
