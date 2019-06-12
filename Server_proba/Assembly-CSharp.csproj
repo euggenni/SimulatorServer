@@ -117,6 +117,10 @@
     <Compile Include="Assets\Scripts\Process\ConnectStudent.cs" />
     <Compile Include="Assets\Scripts\Process\ConnectStudentManager.cs" />
     <Compile Include="Assets\Scripts\Process\ProcessHandler.cs" />
+    <Compile Include="Assets\Scripts\Result\Description.cs" />
+    <Compile Include="Assets\Scripts\Result\DescriptionManager.cs" />
+    <Compile Include="Assets\Scripts\Result\Result.cs" />
+    <Compile Include="Assets\Scripts\Result\ResultManager.cs" />
     <Compile Include="Assets\Scripts\SaveTask.cs" />
     <Compile Include="Assets\Scripts\ScrollView\ManagerScrollV.cs" />
     <Compile Include="Assets\Scripts\ScrollView\SimpleObjectPool.cs" />

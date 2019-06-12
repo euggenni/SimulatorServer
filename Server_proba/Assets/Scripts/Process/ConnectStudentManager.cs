@@ -16,8 +16,8 @@ public class ConnectStudentManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ConnectStudents.Add(new ConnectStudent("K-333-2", "Петров Петр Петрович", "Ожидает"));
-        ConnectStudents.Add(new ConnectStudent("K-333-3", "Сидоров Сидр Сидорович", "Ожидает"));
+        ConnectStudents.Add(new ConnectStudent("K-333-2", "Петров Петр Петрович", "Ожидание"));
+        ConnectStudents.Add(new ConnectStudent("K-333-3", "Сидоров Сидр Сидорович", "Ожидание"));
         ConnectStudents.Add(new ConnectStudent("K-333-5", "Иванов Иван Иванович", "В процессе"));
         Invoke("UpdateTable", 1);
     }
