@@ -114,6 +114,9 @@
     <Compile Include="Assets\Scripts\Platoon\PlatoonsManager.cs" />
     <Compile Include="Assets\Scripts\Platoon\Student.cs" />
     <Compile Include="Assets\Scripts\PreparingTaskWindowHandler.cs" />
+    <Compile Include="Assets\Scripts\Process\ConnectStudent.cs" />
+    <Compile Include="Assets\Scripts\Process\ConnectStudentManager.cs" />
+    <Compile Include="Assets\Scripts\Process\ProcessHandler.cs" />
     <Compile Include="Assets\Scripts\SaveTask.cs" />
     <Compile Include="Assets\Scripts\ScrollView\ManagerScrollV.cs" />
     <Compile Include="Assets\Scripts\ScrollView\SimpleObjectPool.cs" />
