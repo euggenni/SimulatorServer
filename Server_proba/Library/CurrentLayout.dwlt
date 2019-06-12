@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 3}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 398}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -72,7 +72,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 398}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &4
 MonoBehaviour:
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 348}
   m_MaxSize: {x: 12008, y: 8048}
   vertical: 0
-  controlID: 97
+  controlID: 68
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -342,19 +342,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Platoon
+    - Assets/Scripts/Network
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Platoon
+  - Assets/Scripts/Network
   m_LastFoldersGridSize: -1
   m_LastProjectPath: B:\GitHub\SimulatorServer\Server_proba
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 14270000
-    m_LastClickedID: 10004
+    m_SelectedIDs: 68280000
+    m_LastClickedID: 10344
     m_ExpandedIDs: 0000000006270000c627000018290000942900009a2900000a2a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -408,8 +408,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 66faffff
-    m_LastClickedInstanceID: -1434
+    m_SelectedInstanceIDs: ee2d0000
+    m_LastClickedInstanceID: 11758
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000cc400000ae560000be600000185800002e550000123c0000584b00002a4e0000d23e0000a03f000004410000fc5d00009e5e00002e370000f45900000c610000ee4a00001029000046270000f2fcfcff
     m_RenameOverlay:
@@ -467,9 +467,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1c370000
-      m_LastClickedID: 14108
-      m_ExpandedIDs: 4cfaffff66faffffd4fbffff1a2d00007e2f00001c370000fc3d00003c410000
+      m_SelectedIDs: de360000
+      m_LastClickedID: 14046
+      m_ExpandedIDs: 90faffffd4fbffff162d0000722f0000a03d0000ec400000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

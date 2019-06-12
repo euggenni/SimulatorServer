@@ -5,6 +5,8 @@ using UnityEngine.Networking;
 
 public class Server : MonoBehaviour
 {
+    public static bool IsTranslate = false; //флаг, отвечающий за раздачу списка взвода
+    
     public class NewMessage : MessageBase
     {
         public string Text;

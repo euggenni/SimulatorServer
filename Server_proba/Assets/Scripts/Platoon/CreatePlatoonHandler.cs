@@ -59,10 +59,22 @@ public class CreatePlatoonHandler : MonoBehaviour
 
     public void SavePlatoon() //реализует сохранение взвода
     {
+        ReadData();
         PlatoonsManager.AddPlatoon(new Platoon(NamePlatoon.text, BufferStudents));
         PlatoonsManager.SavePlatoons();
         PlatoonsHandler.Starter(SelectPlatoon, Table2);
         CreatePanel.SetActive(false);
+    }
+
+    public void OpenPanel() //открывает окно создания взвода
+    {
+        CreatePanel.SetActive(true);
+        //SelectedPlatoon = PlatoonsManager.GetPlatoon(SelectPlatoon.captionText.text);
+        //NamePlatoon.text = SelectedPlatoon.NamePlatoon;
+        NamePlatoon.text = "";
+        Students = new List<Student>();
+        Table.UpdateContent();
+        //Invoke("UpdateTable", (float)0.5); //задержка для подгрузки данных
     }
     
     // Start is called before the first frame update

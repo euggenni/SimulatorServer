@@ -15,8 +15,20 @@ public class PlatoonsHandler : MonoBehaviour
         SelectedPlatoon = PlatoonsManager.GetPlatoon(SelectPlatoon.captionText.text);
         byte number = 1;
         Students.Clear();
-        //Debug.Log(SelectedPlatoon.ToString());
         foreach(Student student in SelectedPlatoon.Students)
+        {
+            Students.Add(new Student(student.NameStudent, number));
+            number++;
+        }
+        Table.UpdateContent();
+    }
+
+    public static void OnChangePlatoonDropdownOut(Dropdown SelectPlatoon, UnityUITable.Table Table) //внешний обработчик события изменения выбранного взвода
+    {
+        SelectedPlatoon = PlatoonsManager.GetPlatoon(SelectPlatoon.captionText.text);
+        byte number = 1;
+        Students.Clear();
+        foreach (Student student in SelectedPlatoon.Students)
         {
             Students.Add(new Student(student.NameStudent, number));
             number++;
@@ -33,14 +45,17 @@ public class PlatoonsHandler : MonoBehaviour
         {
             SelectPlatoon.options.Add(new Dropdown.OptionData(platoon.NamePlatoon));
         }
-        //SelectPlatoon.value = 0;
     }
     
+    public void TranslatePlatoons() //запускает трансляцию списка взвода
+    {
+        Server.IsTranslate = true;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         Starter(SelectPlatoon, Table);
-        //OnChangePlatoonDropdown();
         Invoke("OnChangePlatoonDropdown", 1);
     }
 
