@@ -1,7 +1,7 @@
 {
     "Tasks": [
         {
-            "taskName": "Пробная задача 1",
+            "taskName": "Отработка 1-го варианта действий",
             "lAType": 4,
             "lASpeed": 100.0,
             "targetingType": 1,
@@ -23,7 +23,7 @@
             "trajectoryType": 0
         },
         {
-            "taskName": "Пробная задача 2",
+            "taskName": "Отработка 2-го варианта действий",
             "lAType": 4,
             "lASpeed": 100.0,
             "targetingType": 1,
@@ -45,7 +45,7 @@
             "trajectoryType": 0
         },
         {
-            "taskName": "Пробная задача 3",
+            "taskName": "Задача простой сложности",
             "lAType": 4,
             "lASpeed": 100.0,
             "targetingType": 1,
@@ -55,6 +55,94 @@
             "terrainType": 2,
             "trajectory": {
                 "startLADistance": 2000,
+                "flightHeight": 2000,
+                "azimuth": 0
+            },
+            "rockets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "trajectoryType": 0
+        },
+        {
+            "taskName": "Задача средней сложности",
+            "lAType": 4,
+            "lASpeed": 100.0,
+            "targetingType": 1,
+            "weatherType": 0,
+            "interferenceType": 0,
+            "interferencePeriod": 0,
+            "terrainType": 2,
+            "trajectory": {
+                "startLADistance": 7000,
+                "flightHeight": 2000,
+                "azimuth": 0
+            },
+            "rockets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "trajectoryType": 1
+        },
+        {
+            "taskName": "Задача повышенной сложности",
+            "lAType": 4,
+            "lASpeed": 100.0,
+            "targetingType": 1,
+            "weatherType": 0,
+            "interferenceType": 0,
+            "interferencePeriod": 0,
+            "terrainType": 2,
+            "trajectory": {
+                "startLADistance": 7000,
+                "flightHeight": 2000,
+                "azimuth": 0
+            },
+            "rockets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "trajectoryType": 1
+        },
+        {
+            "taskName": "Дополнительная задача",
+            "lAType": 4,
+            "lASpeed": 100.0,
+            "targetingType": 1,
+            "weatherType": 0,
+            "interferenceType": 0,
+            "interferencePeriod": 0,
+            "terrainType": 2,
+            "trajectory": {
+                "startLADistance": 7000,
+                "flightHeight": 2000,
+                "azimuth": 0
+            },
+            "rockets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "trajectoryType": 0
+        },
+        {
+            "taskName": "Экзаменационный вариант",
+            "lAType": 4,
+            "lASpeed": 100.0,
+            "targetingType": 1,
+            "weatherType": 0,
+            "interferenceType": 0,
+            "interferencePeriod": 0,
+            "terrainType": 2,
+            "trajectory": {
+                "startLADistance": 7000,
                 "flightHeight": 2000,
                 "azimuth": 0
             },

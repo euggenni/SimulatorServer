@@ -17,6 +17,7 @@ public class ChangePlatoonHandler : MonoBehaviour
     public UnityUITable.Table Table2; //таблицы с данными из предыдущего окна
     public Dropdown SelectPlatoon; //кнопка выбора взвода
     public List<Student> Students = new List<Student>(); //список студентов
+    public Text PlatoonNameLabel; //текст выводящий взвод приконтроле тестирования
     private List<Student> BufferStudents = new List<Student>(); //буферный список
     private Platoon SelectedPlatoon = new Platoon();
 
@@ -29,7 +30,7 @@ public class ChangePlatoonHandler : MonoBehaviour
     {
         //Table2.UpdateContent();
         //SelectPlatoon.value = 1;
-        PlatoonsHandler.OnChangePlatoonDropdownOut(SelectPlatoon, Table2);
+        PlatoonsHandler.OnChangePlatoonDropdownOut(SelectPlatoon, Table2, PlatoonNameLabel);
     }
 
     public void OpenPanel() //выполняет открытие меню редактирования списка студентов
@@ -90,7 +91,7 @@ public class ChangePlatoonHandler : MonoBehaviour
         ReadData();
         PlatoonsManager.Platoons[PlatoonsManager.Platoons.FindIndex(x => x.NamePlatoon == SelectedPlatoon.NamePlatoon)] = new Platoon(NamePlatoon.text, BufferStudents);
         PlatoonsManager.SavePlatoons();
-        PlatoonsHandler.Starter(SelectPlatoon, Table2);
+        PlatoonsHandler.Starter(SelectPlatoon, Table2, PlatoonNameLabel);
         Invoke("UpdateHeadTable", (float)0.5);
         CreatePanel.SetActive(false);
     }
@@ -109,7 +110,7 @@ public class ChangePlatoonHandler : MonoBehaviour
         PlatoonsHandler.SelectedPlatoon = null;
         SelectPlatoon.value = 0;
         PlatoonsManager.SavePlatoons();
-        PlatoonsHandler.Starter(SelectPlatoon, Table2);
+        PlatoonsHandler.Starter(SelectPlatoon, Table2, PlatoonNameLabel);
         Invoke("UpdateHeadTable", (float)0.5);
         OkNoPanel.SetActive(false);
         CreatePanel.SetActive(false);

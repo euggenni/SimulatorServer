@@ -104,7 +104,6 @@
     <Compile Include="Assets\RuntimeGUITable\Scripts\Utils\GameObjectUtils.cs" />
     <Compile Include="Assets\RuntimeGUITable\Scripts\Utils\ReflectionUtils.cs" />
     <Compile Include="Assets\RuntimeGUITable\Scripts\Utils\TransformUtils.cs" />
-    <Compile Include="Assets\Scripts\JsonHelper.cs" />
     <Compile Include="Assets\Scripts\Network\Server.cs" />
     <Compile Include="Assets\Scripts\PatchHandler.cs" />
     <Compile Include="Assets\Scripts\Platoon\ChangePlatoonHandler.cs" />
@@ -113,7 +112,6 @@
     <Compile Include="Assets\Scripts\Platoon\PlatoonsHandler.cs" />
     <Compile Include="Assets\Scripts\Platoon\PlatoonsManager.cs" />
     <Compile Include="Assets\Scripts\Platoon\Student.cs" />
-    <Compile Include="Assets\Scripts\PreparingTaskWindowHandler.cs" />
     <Compile Include="Assets\Scripts\Process\ConnectStudent.cs" />
     <Compile Include="Assets\Scripts\Process\ConnectStudentManager.cs" />
     <Compile Include="Assets\Scripts\Process\ProcessHandler.cs" />
@@ -121,13 +119,16 @@
     <Compile Include="Assets\Scripts\Result\DescriptionManager.cs" />
     <Compile Include="Assets\Scripts\Result\Result.cs" />
     <Compile Include="Assets\Scripts\Result\ResultManager.cs" />
-    <Compile Include="Assets\Scripts\SaveTask.cs" />
     <Compile Include="Assets\Scripts\ScrollView\ManagerScrollV.cs" />
     <Compile Include="Assets\Scripts\ScrollView\SimpleObjectPool.cs" />
     <Compile Include="Assets\Scripts\ScrollView\TaskButton.cs" />
-    <Compile Include="Assets\Scripts\Task.cs" />
-    <Compile Include="Assets\Scripts\TaskManager.cs" />
-    <Compile Include="Assets\Scripts\TaskParamsMenuHandler.cs" />
+    <Compile Include="Assets\Scripts\Task\JsonHelper.cs" />
+    <Compile Include="Assets\Scripts\Task\PreparingTaskWindowHandler.cs" />
+    <Compile Include="Assets\Scripts\Task\SaveTask.cs" />
+    <Compile Include="Assets\Scripts\Task\StudentsHandler.cs" />
+    <Compile Include="Assets\Scripts\Task\Task.cs" />
+    <Compile Include="Assets\Scripts\Task\TaskManager.cs" />
+    <Compile Include="Assets\Scripts\Task\TaskParamsMenuHandler.cs" />
     <Compile Include="Assets\Scripts\User\AddUserHandler.cs" />
     <Compile Include="Assets\Scripts\User\ChangePasswordHandler.cs" />
     <Compile Include="Assets\Scripts\User\OutUserHandler.cs" />

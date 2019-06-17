@@ -12,6 +12,7 @@ public class CreatePlatoonHandler : MonoBehaviour
     public UnityUITable.Table Table; //таблица с данными
     public UnityUITable.Table Table2; //таблицы с данными из предыдущего окна
     public Dropdown SelectPlatoon; //кнопка выбора взвода
+    public Text PlatoonNameLabel; //текст, выводящий название взвода при контроле выполнения
     public List<Student> Students = new List<Student>(); //список студентов
     private List<Student> BufferStudents = new List<Student>(); //буферный список
 
@@ -62,7 +63,7 @@ public class CreatePlatoonHandler : MonoBehaviour
         ReadData();
         PlatoonsManager.AddPlatoon(new Platoon(NamePlatoon.text, BufferStudents));
         PlatoonsManager.SavePlatoons();
-        PlatoonsHandler.Starter(SelectPlatoon, Table2);
+        PlatoonsHandler.Starter(SelectPlatoon, Table2, PlatoonNameLabel);
         CreatePanel.SetActive(false);
     }
 

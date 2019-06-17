@@ -3,29 +3,145 @@
         {
             "students": [
                 {
-                    "nameStudent": "0",
+                    "nameStudent": "Анокин Алексей Александрович",
                     "idStudent": 0
                 },
                 {
-                    "nameStudent": "00",
+                    "nameStudent": "Балицкий Иван Александрович",
                     "idStudent": 0
                 },
                 {
-                    "nameStudent": "000",
+                    "nameStudent": "Бровков Вадим Александрович",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Красников Александр Андреевич",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Краснов Алексей Сергеевич",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Лапин Алексей Андреевич",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Перегудов Сергей Вячеславович",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Потравнов Максим Игоревич",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Семикоз Владимир Сергеевич",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Кармилицин Илья Николаевич",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Бирзул Андрей Сергеевич",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Грищенко Роман Сергеевич",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Мендыбаев Рустам Амангельдыевич",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Селиванов Андрей Евгеньевич",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Тихомиров Дмитрий Александрович",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Круг Дониэль Викторович",
                     "idStudent": 0
                 }
             ],
-            "namePlatoon": "122",
+            "namePlatoon": "121",
             "idPlatoon": 0
         },
         {
             "students": [
                 {
-                    "nameStudent": "ffggg",
+                    "nameStudent": "Абдулаев Артур Багирович",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Князев Александр Сергеевич",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Беджанян Давид Александрович",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Зельманов Михаил Романович",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Рубцов Александр Станиславович",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Семикин Илья Валерьевич",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Гузь Вячеслав Олегович",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Зубков Илья Игоревич",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Гайнуллин Шамиль Альбертович",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Акмурзинов Аскар Азаматович",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Абрамов Всеволод Михайлович",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Сапожников Николай Олегович",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Косарев Александр Дмитриевич",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Канталиев Каир Канатович",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Севостьянов Дмитрий Михайлович",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Батаев Андрей Сергеевич",
+                    "idStudent": 0
+                },
+                {
+                    "nameStudent": "Федотов Владислав Дмитриевич",
                     "idStudent": 0
                 }
             ],
-            "namePlatoon": "123",
+            "namePlatoon": "122",
             "idPlatoon": 0
         }
     ]

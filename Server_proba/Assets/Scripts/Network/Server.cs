@@ -34,4 +34,26 @@ public class Server : MonoBehaviour
         NetworkServer.SendToAll(178, JData);
         NetworkServer.SendToClient(NetworkServer.connections[1].connectionId, 178, JData);
     }
+
+    public static void StartTesting() //начинает процесс тестирования
+    {
+        NewMessage JData = new NewMessage();
+        JData.Text = "Start";
+        NetworkServer.SendToAll(178, JData);
+        Debug.Log("Test starting");
+    }
+
+    public static void EndTesting() //Завершает процесс тестирования
+    {
+        NewMessage JData = new NewMessage();
+        JData.Text = "End";
+        NetworkServer.SendToAll(178, JData);
+        Debug.Log("End testing");
+    }
+
+    public static void NewConnection(GameObject Students)
+    {
+        Students.SetActive(true);
+        Debug.Log("Student connected");
+    }
 }

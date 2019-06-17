@@ -7,6 +7,19 @@ public class ConnectStudentManager : MonoBehaviour
     public UnityUITable.Table Table; //таблица с данными
     public static List<ConnectStudent> ConnectStudents = new List<ConnectStudent>();
 
+    public void StartTesting() //начинает процесс тестирования
+    {
+        Server.StartTesting();
+        ConnectStudents.ToArray()[0].State = "В процессе";
+        UpdateTable();
+    }
+
+    public void EndTesting() //завершает процесс тестирования
+    {
+        Server.EndTesting();
+        ConnectStudents.ToArray()[0].State = "Завершено";
+        UpdateTable();
+    }
 
     public void UpdateTable()
     {
@@ -16,9 +29,7 @@ public class ConnectStudentManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ConnectStudents.Add(new ConnectStudent("K-333-2", "Петров Петр Петрович", "Ожидание"));
-        ConnectStudents.Add(new ConnectStudent("K-333-3", "Сидоров Сидр Сидорович", "Ожидание"));
-        ConnectStudents.Add(new ConnectStudent("K-333-5", "Иванов Иван Иванович", "В процессе"));
+        ConnectStudents.Add(new ConnectStudent("Зверь-ПК", "Абдулаев Артур Багирович", "Ожидание"));
         Invoke("UpdateTable", 1);
     }
 
