@@ -129,7 +129,6 @@ public class ResultManager : MonoBehaviour
         Results = new List<Result>(ResultsBufer);
         AvgNotes.Add(new Result(1, "Зверь-ПК", "Абдулаев Артур Багирович", "4.0", "122", new DateTime(2019, 6, 18, 15, 40, 25), this));
         AvgNotes.Add(new Result(2, "Зверь-ПК", "Гайнуллин Шамиль Альбертович", "3.0", "122", new DateTime(2019, 6, 17, 15, 40, 25), this));
-        AvgNotes.Add(new Result(3, "Зверь-ПК", "Гузь Вячеслав Олегович", "4.0", "122", new DateTime(2019, 6, 8, 15, 40, 25), this));
         Invoke("UpdateTable", 1);
         OnChangeResults();
     }
